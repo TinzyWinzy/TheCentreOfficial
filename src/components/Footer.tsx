@@ -2,11 +2,11 @@ import { SITE } from "@/data/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 mt-auto">
+    <footer className="bg-brand-red text-white/80 mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-white font-semibold text-lg mb-3">{SITE.name}</h3>
-          <p className="text-sm leading-relaxed">{SITE.tagline}</p>
+          <p className="text-sm leading-relaxed text-white/70">{SITE.tagline}</p>
         </div>
 
         <div>
@@ -32,8 +32,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gray-800">
-        <div className="max-w-6xl mx-auto px-4 py-4 text-center text-xs">
+      <div className="border-t border-white/20">
+        <div className="max-w-6xl mx-auto px-4 py-4 text-center text-xs text-white/60">
           &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </div>
       </div>

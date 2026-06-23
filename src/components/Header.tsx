@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-gray-900 tracking-tight">
+        <Link href="/" className="text-xl font-bold text-brand-red tracking-tight">
           {SITE.name}
         </Link>
 
@@ -27,14 +27,14 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-brand-red transition-colors"
             >
               {link.label}
             </Link>
           ))}
           <a
             href={`tel:${SITE.phone}`}
-            className="text-sm font-semibold bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+            className="text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
           >
             Call Us
           </a>
@@ -62,14 +62,14 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block text-sm font-medium text-gray-600 hover:text-gray-900 py-1"
+              className="block text-sm font-medium text-gray-600 hover:text-brand-red py-1"
             >
               {link.label}
             </Link>
           ))}
           <a
             href={`tel:${SITE.phone}`}
-            className="block text-center text-sm font-semibold bg-gray-900 text-white px-4 py-2 rounded-lg mt-2"
+            className="block text-center text-sm font-semibold bg-brand-red text-white px-4 py-2 rounded-lg mt-2"
           >
             Call {SITE.phone}
           </a>

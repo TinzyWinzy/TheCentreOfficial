@@ -2,6 +2,7 @@ export default function SectionHeading({ title, subtitle }: { title: string; sub
   return (
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{title}</h2>
+      <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-brand-red" />
       {subtitle && <p className="mt-3 text-gray-500 max-w-2xl mx-auto">{subtitle}</p>}
     </div>
   );

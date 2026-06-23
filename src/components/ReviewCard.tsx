@@ -5,7 +5,7 @@ export default function ReviewCard({ review }: { review: Review }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-sm font-semibold text-gray-600">
+        <div className="w-10 h-10 rounded-full bg-brand-green flex items-center justify-center text-sm font-semibold text-white">
           {review.author.charAt(0)}
         </div>
         <div>

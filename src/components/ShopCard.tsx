@@ -1,8 +1,8 @@
 import type { Shop } from "@/data/site";
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Grocery: "bg-emerald-100 text-emerald-700",
-  Hardware: "bg-orange-100 text-orange-700",
+  Grocery: "bg-brand-green-light text-brand-green",
+  Hardware: "bg-brand-red-light text-brand-red",
   Beauty: "bg-pink-100 text-pink-700",
   "Food & Drink": "bg-amber-100 text-amber-700",
   Entertainment: "bg-purple-100 text-purple-700",

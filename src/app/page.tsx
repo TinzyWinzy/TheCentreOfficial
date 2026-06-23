@@ -23,7 +23,7 @@ export default function HomePage() {
           <div className="text-center mt-8">
             <a
               href="/shops"
-              className="inline-flex items-center gap-1 text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
+              className="inline-flex items-center gap-1 text-sm font-medium text-brand-red hover:text-red-700 transition-colors"
             >
               View all shops &rarr;
             </a>
@@ -31,7 +31,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-brand-green-light">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeading
             title="What People Say"
@@ -57,7 +57,7 @@ export default function HomePage() {
                 key={amenity}
                 className="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-3 text-sm font-medium text-gray-700"
               >
-                <svg className="w-4 h-4 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-brand-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 {amenity}

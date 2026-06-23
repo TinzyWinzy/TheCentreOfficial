@@ -22,7 +22,7 @@ export default function ContactPage() {
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
               <a
                 href={`tel:${SITE.phone}`}
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-sm text-brand-red hover:text-red-700 font-medium transition-colors"
               >
                 {SITE.phone}
               </a>
@@ -40,7 +40,7 @@ export default function ContactPage() {
                   href={SITE.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-sm text-brand-red hover:text-red-700 transition-colors"
                 >
                   Facebook
                 </a>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                   href={SITE.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-sm text-brand-red hover:text-red-700 transition-colors"
                 >
                   Instagram
                 </a>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   href={SITE.social.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-sm text-brand-red hover:text-red-700 transition-colors"
                 >
                   WhatsApp
                 </a>
