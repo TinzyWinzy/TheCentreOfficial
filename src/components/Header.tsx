@@ -7,6 +7,7 @@ import { SITE } from "@/data/site";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/shops", label: "Shops" },
+  { href: "/diaspora", label: "Diaspora Delivery" },
   { href: "/services", label: "Services" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },

@@ -9,6 +9,30 @@ export default function HomePage() {
     <>
       <Hero />
 
+      <section className="py-16 md:py-20 bg-brand-red text-white">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold sm:text-4xl">Sending Love Back Home?</h2>
+          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-white" />
+          <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+            In the diaspora? Order goods from our shops and we deliver directly to your family and relatives in Rusape.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="/diaspora"
+              className="inline-flex items-center gap-2 bg-white text-brand-red font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Learn How It Works
+            </a>
+            <a
+              href={`tel:${SITE.phone}`}
+              className="inline-flex items-center gap-2 border border-white/30 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition-colors"
+            >
+              Call {SITE.phone}
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeading

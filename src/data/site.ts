@@ -21,7 +21,7 @@ export type Service = {
 
 export const SITE = {
   name: "The Centre",
-  tagline: "Your hub for shopping, snooker, food, drinks, and free WiFi",
+  tagline: "Your hub for shopping, snooker, food, drinks, and free WiFi — delivering to your loved ones back home",
   address: "7CXG+4MV Rugoyi, Rusape, Zimbabwe",
   plusCode: "7CXF+F5 Rugoyi",
   phone: "078 249 1166",
@@ -110,6 +110,38 @@ export const AMENITIES = [
   "On-site parking",
   "Free street parking",
   "Free parking lot",
+];
+
+export const DIASPORA_STEPS = [
+  {
+    step: 1,
+    title: "Contact Us",
+    description: "Reach out via WhatsApp, phone call, or social media. Tell us what you'd like to purchase and your delivery location in Rusape.",
+  },
+  {
+    step: 2,
+    title: "We Shop",
+    description: "We source the items from our shops — groceries, cement, hardware, or any goods available. We confirm prices and availability with you.",
+  },
+  {
+    step: 3,
+    title: "You Pay",
+    description: "Pay via mobile money, bank transfer, or international payment. We'll share confirmation photos of the purchased goods.",
+  },
+  {
+    step: 4,
+    title: "We Deliver",
+    description: "We deliver directly to your family or relatives in the Rusape area. We send you proof of delivery and their feedback.",
+  },
+] as const;
+
+export const DIASPORA_PRODUCTS = [
+  { icon: "🛒", label: "Groceries & Food" },
+  { icon: "🧱", label: "Cement & Hardware" },
+  { icon: "🧴", label: "Household Goods" },
+  { icon: "👕", label: "Clothing & Fashion" },
+  { icon: "📱", label: "Electronics & Phones" },
+  { icon: "🎁", label: "Custom Orders" },
 ];
 
 export const SERVICES: Service[] = [
