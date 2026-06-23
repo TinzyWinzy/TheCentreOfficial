@@ -3,6 +3,8 @@ export type Shop = {
   name: string;
   description: string;
   category: string;
+  icon: string;
+  color: string;
 };
 
 export type Review = {
@@ -19,6 +21,11 @@ export type Service = {
   icon: string;
 };
 
+export type DiasporaFaq = {
+  question: string;
+  answer: string;
+};
+
 export const SITE = {
   name: "The Centre",
   tagline: "Your hub for shopping, snooker, food, drinks, and free WiFi — delivering to your loved ones back home",
@@ -27,7 +34,9 @@ export const SITE = {
   phone: "078 249 1166",
   rating: 5.0,
   reviewCount: 7,
-  hours: "Open · Closes 11 pm",
+  hours: "Open · Closes 11 pm",
+  googleMapsUrl: "https://maps.google.com/?q=7CXG+4MV+Rugoyi,+Rusape,+Zimbabwe",
+  googleReviewUrl: "https://search.google.com/local/reviews?placeid=REPLACE_ME",
   social: {
     facebook: "#",
     instagram: "#",
@@ -41,36 +50,48 @@ export const SHOPS: Shop[] = [
     name: "Grocery Store",
     description: "Fresh produce, essentials, and everyday groceries at affordable prices.",
     category: "Grocery",
+    icon: "🛒",
+    color: "green",
   },
   {
     id: "hardware",
     name: "Hardware & Cement",
     description: "Quality cement and building materials for all your construction needs.",
     category: "Hardware",
+    icon: "🔨",
+    color: "red",
   },
   {
     id: "salon",
     name: "Salon & Barber",
     description: "Professional hair styling, grooming, and beauty services.",
     category: "Beauty",
+    icon: "💇",
+    color: "pink",
   },
   {
     id: "bar",
     name: "Bar & Lounge",
     description: "Relax with drinks and good company in a vibrant atmosphere.",
     category: "Food & Drink",
+    icon: "🍻",
+    color: "amber",
   },
   {
     id: "snooker",
     name: "Snooker Hall",
     description: "Enjoy a game of snooker with friends in a cozy setting.",
     category: "Entertainment",
+    icon: "🎱",
+    color: "purple",
   },
   {
     id: "general",
     name: "General Dealer",
     description: "A wide range of commodities — from household goods to everyday essentials.",
     category: "Retail",
+    icon: "🏪",
+    color: "blue",
   },
 ];
 
@@ -104,34 +125,29 @@ export const REVIEWS: Review[] = [
 ];
 
 export const AMENITIES = [
-  "In-store shopping",
-  "Free Wi-Fi",
-  "Gender-neutral toilets",
-  "On-site parking",
-  "Free street parking",
-  "Free parking lot",
+  { label: "In-store shopping", icon: "🛍️" },
+  { label: "Free Wi-Fi", icon: "📶" },
+  { label: "Gender-neutral toilets", icon: "🚻" },
+  { label: "On-site parking", icon: "🅿️" },
+  { label: "Free street parking", icon: "🆓" },
+  { label: "Free parking lot", icon: "🅿️" },
 ];
 
 export const DIASPORA_STEPS = [
   {
     step: 1,
-    title: "Contact Us",
-    description: "Reach out via WhatsApp, phone call, or social media. Tell us what you'd like to purchase and your delivery location in Rusape.",
+    title: "Browse & Order",
+    description: "Tell us what you need via WhatsApp, phone, or social media. We confirm prices and availability.",
   },
   {
     step: 2,
-    title: "We Shop",
-    description: "We source the items from our shops — groceries, cement, hardware, or any goods available. We confirm prices and availability with you.",
+    title: "We Shop & Pack",
+    description: "We source the items from our shops — groceries, cement, hardware, or any goods. We share photos of your purchase.",
   },
   {
     step: 3,
-    title: "You Pay",
-    description: "Pay via mobile money, bank transfer, or international payment. We'll share confirmation photos of the purchased goods.",
-  },
-  {
-    step: 4,
-    title: "We Deliver",
-    description: "We deliver directly to your family or relatives in the Rusape area. We send you proof of delivery and their feedback.",
+    title: "Delivered to Family",
+    description: "We deliver directly to your loved ones in the Rusape area and send you proof of delivery.",
   },
 ] as const;
 
@@ -142,6 +158,25 @@ export const DIASPORA_PRODUCTS = [
   { icon: "👕", label: "Clothing & Fashion" },
   { icon: "📱", label: "Electronics & Phones" },
   { icon: "🎁", label: "Custom Orders" },
+];
+
+export const DIASPORA_FAQ: DiasporaFaq[] = [
+  {
+    question: "How does diaspora delivery work?",
+    answer: "You contact us via WhatsApp or phone with your order. We source the items from our shops, confirm prices with you, and once payment is received, we deliver to your family or friends in the Rusape area. Simple!",
+  },
+  {
+    question: "What areas do you deliver to?",
+    answer: "We deliver within the Rusape town area. Contact us for specific locations to confirm if we can reach your family.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept mobile money (EcoCash, OneMoney), bank transfers, and international payment options. We'll share confirmation photos of the purchased goods before delivery.",
+  },
+  {
+    question: "How long does delivery take?",
+    answer: "We typically deliver within 24-48 hours of order confirmation, depending on item availability and delivery location.",
+  },
 ];
 
 export const SERVICES: Service[] = [

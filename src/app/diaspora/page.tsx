@@ -7,7 +7,7 @@ export default function DiasporaPage() {
       <div className="max-w-6xl mx-auto px-4">
         <SectionHeading
           title="Shop & Deliver to Your Loved Ones"
-          subtitle="You're abroad but your family is back home. We help you buy and deliver — hassle free."
+          subtitle="You&rsquo;re abroad but your family is back home. We help you buy and deliver — hassle free."
         />
 
         <div className="bg-brand-red text-white rounded-2xl p-8 md:p-12 text-center mb-16">
@@ -71,7 +71,7 @@ export default function DiasporaPage() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-gray-500 mb-2">Have questions? We're here to help.</p>
+          <p className="text-gray-500 mb-2">Have questions? We&rsquo;re here to help.</p>
           <a
             href={SITE.social.whatsapp}
             target="_blank"

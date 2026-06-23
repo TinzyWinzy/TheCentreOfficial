@@ -1,5 +1,5 @@
-export default function StarRating({ rating, size = "sm" }: { rating: number; size?: "sm" | "lg" }) {
-  const cls = size === "lg" ? "w-6 h-6" : "w-4 h-4";
+export default function StarRating({ rating, size = "sm" }: { rating: number; size?: "sm" | "md" | "lg" }) {
+  const cls = size === "lg" ? "w-6 h-6" : size === "md" ? "w-5 h-5" : "w-4 h-4";
   return (
     <span className="inline-flex gap-0.5">
       {Array.from({ length: 5 }).map((_, i) => (

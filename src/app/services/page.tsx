@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function ServicesPage() {
   return (
-    <div className="py-16 md:py-20">
+    <div className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <SectionHeading
           title="Services & Amenities"
@@ -14,7 +14,7 @@ export default function ServicesPage() {
           {SERVICES.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-xl border border-gray-200 p-6 flex gap-5 items-start"
+              className="bg-white rounded-xl border border-gray-200 p-6 flex gap-5 items-start hover:shadow-lg hover:-translate-y-0.5 transition-all"
             >
               <span className="text-3xl shrink-0">{service.icon}</span>
               <div>
@@ -32,13 +32,11 @@ export default function ServicesPage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
           {AMENITIES.map((amenity) => (
             <div
-              key={amenity}
-              className="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-3 text-sm font-medium text-gray-700"
+              key={amenity.label}
+              className="flex items-center gap-2 bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium text-gray-700 border border-gray-100 hover:border-brand-green/30 hover:bg-brand-green-light/50 transition-all"
             >
-                <svg className="w-4 h-4 text-brand-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              {amenity}
+              <span className="text-lg shrink-0">{amenity.icon}</span>
+              {amenity.label}
             </div>
           ))}
         </div>
