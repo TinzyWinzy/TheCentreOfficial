@@ -130,7 +130,7 @@ export default function Footer() {
               WhatsApp
             </a>
             <span className="text-white/20">|</span>
-            <span>Made with ❤️ in Rusape</span>
+            <span>Made by Radbit Studios</span>
           </div>
         </div>
       </div>
